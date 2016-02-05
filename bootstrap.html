@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <header>
+        <div class="text-left col-xs-6 v-align">
+            <h1 id="headline">Styl.us</h1>
+            <h3 id="sub-headline">Turn you pen into your best<br> friend</h3>
+            <h3 id="sub-headline">Make every line you write<br> count...</h3>
+            <div class="btn btn-info">GET YOUR STYLUS</div>  
+        </div>
+    </header>
+    <main>
+       <figure class="text-center col-xs-offset-2 col-xs-8 col-sm-6 col-md-3">
+           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+           <figcaption>
+               <h3>Natural writing</h3>
+               <p>Don't change your habits, write with a pen <strong>on paper notebooks</strong></p>           
+           </figcaption>
+       </figure>
+       <figure class="text-center col-xs-offset-2 col-xs-12 col-sm-6 col-md-3">
+           <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+           <figcaption>
+               <h3>Sync. copy</h3>
+               <p>Stylus instantaneously copy your text on your computer, <strong>in real-time</strong></p>
+           </figcaption>
+       </figure>
+       <figure class="text-center col-xs-offset-2 col-xs-12 col-sm-6 col-md-3">
+          <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+           <figcaption>
+               <h3>Analytics</h3>
+               <p>Get feedbacks on the way you write, <strong>your favorite words, your frequent mistakes</strong></p>
+           </figcaption>
+       </figure>
+       <figure class="text-center col-xs-offset-2 col-xs-12 col-sm-6 col-md-3">
+           <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+           <figcaption>
+               <h3>Storing your texts</h3>
+               <p>Everyline written with your stylus is stored in the cloud, so that <strong>it's never lost</strong></p>
+           </figcaption>
+       </figure> 
+    </main>
+    <form action="/" class="text-center">
+        <div class="form-group"><label for="email">Leave us your mail and get stylus news</label><input type="text"></div>
+    </form>
+    <map style="width: 100%; height: 400px;">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+        <script type="text/javascript">
+        var myLating = new google.maps.LatLng(48,852937,2.364178);
+
+        var myOptions = {
+         zoom: 16,
+         center: myLatlng,
+         scrollwheel: false,
+         mapTypeId: google.maps.MapTypeId.ROADMAP,
+         styles: [
+              {
+        "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "gamma": 0.5
+            }
+        ]
+    }
+         ]
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+
+        var marker = new google.maps.Marker({
+         position: myLatlng,
+         map: map,
+         title: "You are here!"
+        });
+        </script>
+    </map>
+</body>
+</html>
